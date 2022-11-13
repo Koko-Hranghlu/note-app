@@ -6,14 +6,11 @@
   font-family: "Kalam", sans-serif;
   margin: 0;
   padding: 0;
-  boder: 1px solid red;
-  overflow: hidden;
 }
 
 button {
   border: none;
   background: none;
-  
 }
 
 body {
