@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;500;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+* {
+  box-sizing: border-box;
+  font-family: "Kalam", sans-serif;
+  margin: 0;
+  padding: 0;
+  boder: 1px solid red;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+body {
+  min-height: 100vh;
+  color: #222;
+  background: #ACB6E5;
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px #222;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+h1 i {
+  color: #bfff00;
+}
+
+.container {
+  width: min(90vw, 1024px);
+  margin: 1rem auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 769px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 486px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.popup-box {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  place-items: center;
+  z-index: 10;
+}
+
+.popup {
+  background: white;
+  width: min(85vw, 450px);
+  padding: 1rem;
+}
+
+.popup header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 1rem;
+}
+
+.popup header .popup-close-btn {
+  font-size: 1.1rem;
+}
+
+.popup .form-group {
+  margin-bottom: 1rem;
+}
+
+.popup input,
+textarea,
+.popup .note-add-btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid grey;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.popup textarea {
+  min-height: 200px;
+}
+
+.popup .note-add-btn {
+  border: none;
+  background: #0070ff;
+  color: white;
+  cursor: pointer;
+}
+
+.add-btn {
+  font-size: 1.5rem;
+  background: black;
+  position: fixed;
+  bottom: 2%;
+  transform: translateX(-10px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: inline-grid;
+  place-items: center;
+  color: white;
+}
+
+.add-btn:hover,
+.add-btn:active {
+  transition: all 0.3s ease;
+  background: white;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note {
+  padding: 1rem 2rem;
+  background: #fedba0;
+  box-shadow: 3px 3px #222;
+  min-height: 300px;
+  max-height: 400px;
+  display: grid;
+  align-content: space-between;
+  
+}
+
+.note.remove {
+  transition: all 0.2s ease;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.note .detail {
+  overflow: scroll;
+}
+
+.note .title {
+  margin-bottom: 12px;
+}
+
+.footer {
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.btns button#edit {
+  color: #00cf0e;
+  margin-right: 10px;
+}
+
+.btns button#delete {
+  color: #ff2b2b;
+}
+
+.btns button {
+  font-size: 1.1rem;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Note App</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!--popup-form-->
+    <h1><i class="fa-solid fa-note-sticky"></i> My Notes</h1>
+    <div class="container">
+      <div class="popup-box">
+        <div class="popup">
+          <header>
+            <h3></h3>
+            <button class="popup-close-btn" type="button">X</button>
+          </header>
+          <form action="#">
+            <div class="form-group">
+              <label>Title</label>
+              <input type="text" spellcheck="false" / id="titleInput">
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea spellcheck="false"></textarea>
+            </div>
+            <button class="note-add-btn"></button>
+          </form>
+        </div>
+      </div>
+      <article class="note">
+        <div class="detail">
+          <h3 class="title">Lorem ipsum</h3>
+          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ad nostrum a voluptatem, eum dolor tempore ex ratione quaerat, est amet, vel odio. Earum eaque ipsam nam repudiandae pariatur molestias?</p>
+        </div>
+        <div class="footer">
+          <p>20 November, 2022</p>
+          <div class="btns">
+            <button
+              id="edit"
+              onclick="editNote(this)"
+              class="fa-solid fa-pen-to-square"
+            ></button>
+            <button
+              id="delete"
+              onclick="deleteNote(this)"
+              class="fa-solid fa-trash-can"
+            ></button>
+          </div>
+        </div>
+      </article>
+      <article class="note">
+        <div class="detail">
+          <h3 class="title">Lorem ipsum</h3>
+          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ad nostrum a voluptatem, eum dolor tempore ex ratione quaerat, est amet, vel odio. Earum eaque ipsam nam repudiandae pariatur molestias?</p>
+        </div>
+        <div class="footer">
+          <p>20 November, 2022</p>
+          <div class="btns">
+            <button
+              id="edit"
+              onclick="editNote(this)"
+              class="fa-solid fa-pen-to-square"
+            ></button>
+            <button
+              id="delete"
+              onclick="deleteNote(this)"
+              class="fa-solid fa-trash-can"
+            ></button>
+          </div>
+        </div>
+      </article>
+      <article class="note">
+        <div class="detail">
+          <h3 class="title">Lorem ipsum</h3>
+          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ad nostrum a voluptatem, eum dolor tempore ex ratione quaerat, est amet, vel odio. Earum eaque ipsam nam repudiandae pariatur molestias?</p>
+        </div>
+        <div class="footer">
+          <p>20 November, 2022</p>
+          <div class="btns">
+            <button
+              id="edit"
+              onclick="editNote(this)"
+              class="fa-solid fa-pen-to-square"
+            ></button>
+            <button
+              id="delete"
+              onclick="deleteNote(this)"
+              class="fa-solid fa-trash-can"
+            ></button>
+          </div>
+        </div>
+      </article>
+      <article class="note">
+        <div class="detail">
+          <h3 class="title">Lorem ipsum</h3>
+          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ad nostrum a voluptatem, eum dolor tempore ex ratione quaerat, est amet, vel odio. Earum eaque ipsam nam repudiandae pariatur molestias?</p>
+        </div>
+        <div class="footer">
+          <p>20 November, 2022</p>
+          <div class="btns">
+            <button
+              id="edit"
+              onclick="editNote(this)"
+              class="fa-solid fa-pen-to-square"
+            ></button>
+            <button
+              id="delete"
+              onclick="deleteNote(this)"
+              class="fa-solid fa-trash-can"
+            ></button>
+          </div>
+        </div>
+      </article>
+      <article class="note">
+        <div class="detail">
+          <h3 class="title">Lorem ipsum</h3>
+          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ad nostrum a voluptatem, eum dolor tempore ex ratione quaerat, est amet, vel odio. Earum eaque ipsam nam repudiandae pariatur molestias?</p>
+        </div>
+        <div class="footer">
+          <p>20 November, 2022</p>
+          <div class="btns">
+            <button
+              id="edit"
+              onclick="editNote(this)"
+              class="fa-solid fa-pen-to-square"
+            ></button>
+            <button
+              id="delete"
+              onclick="deleteNote(this)"
+              class="fa-solid fa-trash-can"
+            ></button>
+          </div>
+        </div>
+      </article>
+      <article class="note">
+        <div class="detail">
+          <h3 class="title">Lorem ipsum</h3>
+          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ad nostrum a voluptatem, eum dolor tempore ex ratione quaerat, est amet, vel odio. Earum eaque ipsam nam repudiandae pariatur molestias?</p>
+        </div>
+        <div class="footer">
+          <p>20 November, 2022</p>
+          <div class="btns">
+            <button
+              id="edit"
+              onclick="editNote(this)"
+              class="fa-solid fa-pen-to-square"
+            ></button>
+            <button
+              id="delete"
+              onclick="deleteNote(this)"
+              class="fa-solid fa-trash-can"
+            ></button>
+          </div>
+        </div>
+      </article>
+      <button class="add-btn">+</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
