@@ -150,7 +150,7 @@ textarea,
 .note .detail {
   overflow: scroll;
   -ms-overflow-style: none; /*Internet Explorer 10+ */
-  scrollbar-width: none;  Firefox 
+  scrollbar-width: none;  /*Firefox */
 }
 
 .note .detail::-webkit-scrollbar {
