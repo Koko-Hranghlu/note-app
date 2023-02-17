@@ -153,7 +153,7 @@ textarea,
   scrollbar-width: none;  /*Firefox */
 }
 
-/note .detail::-webkit-scrollbar {
+note .detail::-webkit-scrollbar {
   display: none; Safari and Chrome 
 } 
 
